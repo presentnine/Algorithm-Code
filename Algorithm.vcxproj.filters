@@ -16,12 +16,15 @@
     <Filter Include="소스 파일\백준">
       <UniqueIdentifier>{01d25d3f-db4c-452f-a69e-27d9d71ad25c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\컴퓨터알고리즘">
+      <UniqueIdentifier>{17eec7ae-19ff-4b7c-a9b3-3c4bc2c1bcaa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="평범한 배낭.cpp">
+    <ClCompile Include="내리막 길.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="내리막 길.cpp">
+    <ClCompile Include="평범한 배낭.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
