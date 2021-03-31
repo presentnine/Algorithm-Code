@@ -19,8 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="도둑질.cpp" />
-    <ClCompile Include="도둑질2.cpp" />
+    <ClCompile Include="1732번 최단경로.cpp" />
+    <ClCompile Include="1732번 최단경로2.cpp" />
+    <ClCompile Include="1937번 욕심쟁이 판다.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

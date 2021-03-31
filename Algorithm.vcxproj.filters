@@ -21,10 +21,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="도둑질.cpp">
+    <ClCompile Include="1937번 욕심쟁이 판다.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="도둑질2.cpp">
+    <ClCompile Include="1732번 최단경로.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="1732번 최단경로2.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
