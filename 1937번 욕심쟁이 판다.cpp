@@ -26,7 +26,7 @@ int searchRoute(int n, vector<vector<int>>& map, int r, int c, int prev) {
 	return cache[r][c] = result + 1;//저장한 캐시 반환
 }
 
-int main1() {
+int main() {
 	int n;
 	int answer = 0;
 	vector<vector<int>> map;
