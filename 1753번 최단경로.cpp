@@ -8,11 +8,11 @@ using namespace std;
 
 void dijkstra(vector<int> &nodeGraph, vector<vector<pair<int, int>>> graph,int V, int K) {
 	priority_queue<pair<int, int>> pq;
-	pq.push(make_pair(0, K));
+	pq.push(make_pair(K, 0));
 
 	while (!pq.empty()) {
-		int here = pq.top().second;
-		int cost = -pq.top().first;
+		int here = pq.top().first;
+		int cost = -pq.top().second;
 		pq.pop();
 
 		if (nodeGraph[here] < cost) //이미 최저값이 있다면 넘어간다.
@@ -24,7 +24,7 @@ void dijkstra(vector<int> &nodeGraph, vector<vector<pair<int, int>>> graph,int V
 
 			if (newDist < nodeGraph[next]) {
 				nodeGraph[next] = newDist;
-				pq.push(make_pair(-newDist, next));
+				pq.push(make_pair(next, -newDist));
 			}
 		}
 	}
