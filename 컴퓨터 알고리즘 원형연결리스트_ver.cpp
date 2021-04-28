@@ -11,11 +11,11 @@ typedef struct {//원형연결리스트 타입
 	ListNode* head;
 }CircularLinkedListType;
 
-void init(CircularLinkedListType* L) {//초기화
+void init4(CircularLinkedListType* L) {//초기화
 	L->head = NULL;
 }
 
-void buildList(CircularLinkedListType* L, int n) {//리스트 생성
+void buildList4(CircularLinkedListType* L, int n) {//리스트 생성
 	ListNode* node = new ListNode;
 	
 	node->data = 1;
@@ -32,7 +32,7 @@ void buildList(CircularLinkedListType* L, int n) {//리스트 생성
 	node->link = L->head;
 }
 
-int runSimulationList(CircularLinkedListType* L, int n, int k) {//모의실행
+int runSimulationList4(CircularLinkedListType* L, int n, int k) {//모의실행
 	ListNode* node = L->head;
 
 	while (node != node->link) {
@@ -49,7 +49,7 @@ int runSimulationList(CircularLinkedListType* L, int n, int k) {//모의실행
 	return node->data;
 }
 
-int main() {
+int main4() {
 	int n;//초의 총 개수
 	int k;//건너뛸 개수
 
@@ -60,8 +60,8 @@ int main() {
 	cin >> k;
 
 	CircularLinkedListType cakeCandle;
-	buildList(&cakeCandle, n);
-	cout << runSimulationList(&cakeCandle, n, k) << "번 째 초입니다." << endl;
+	buildList4(&cakeCandle, n);
+	cout << runSimulationList4(&cakeCandle, n, k) << "번 째 초입니다." << endl;
 
 	return 0;
 }

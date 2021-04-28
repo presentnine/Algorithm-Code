@@ -11,18 +11,18 @@ typedef struct {//단순연결리스트
 	ListNode* head;
 }LinkedListType;
 
-void init(LinkedListType *L) {//초기화
+void init1(LinkedListType *L) {//초기화
 	L->head = NULL;
 }
 
-void addFirst(LinkedListType* L, int item) {//앞 삽입 함수
+void addFirst1(LinkedListType* L, int item) {//앞 삽입 함수
 	ListNode* node = new ListNode;
 	node->data = item;
 	node->link = L->head;
 	L->head = node;
 }
 
-void addLast(LinkedListType* L, int item) {//마지막 삽입 함수
+void addLast1(LinkedListType* L, int item) {//마지막 삽입 함수
 	ListNode* node = new ListNode;
 	node->data = item;
 	node->link = NULL;
@@ -40,9 +40,9 @@ void addLast(LinkedListType* L, int item) {//마지막 삽입 함수
 	temp->link = node;
 }
 
-void add(LinkedListType* L, int pos, int item) {//특정 위치 삽입 함수
+void add1(LinkedListType* L, int pos, int item) {//특정 위치 삽입 함수
 	if (pos == 0) {
-		addFirst(L, item);
+		addFirst1(L, item);
 		return;
 	}
 
@@ -61,7 +61,7 @@ void add(LinkedListType* L, int pos, int item) {//특정 위치 삽입 함수
 	before->link = node;
 }
 
-int get(LinkedListType* L, int pos) {//특정 위치 데이터 반환
+int get1(LinkedListType* L, int pos) {//특정 위치 데이터 반환
 	ListNode* p = L->head;
 	for (int i = 1; i < pos; i++)
 		p = p->link;
@@ -69,7 +69,7 @@ int get(LinkedListType* L, int pos) {//특정 위치 데이터 반환
 	return p->data;
 }
 
-void set(LinkedListType* L, int pos, int item) {//특정 위치 데이터 변경
+void set1(LinkedListType* L, int pos, int item) {//특정 위치 데이터 변경
 	ListNode* p = L->head;
 	for (int i = 1; i < pos; i++)
 		p = p->link;
@@ -77,13 +77,13 @@ void set(LinkedListType* L, int pos, int item) {//특정 위치 데이터 변경
 	p->data = item;
 }
 
-void printList(LinkedListType* L) {//리스트 출력 함수
+void printList1(LinkedListType* L) {//리스트 출력 함수
 	for (ListNode* p = L->head; p != NULL; p = p->link)
 		cout << "[" << p->data << "] -> ";
 	cout << "NULL" << endl;
 }
 
-int removeFirst(LinkedListType* L) {//앞 제거 함수
+int removeFirst1(LinkedListType* L) {//앞 제거 함수
 	ListNode* element = L->head;
 	int data;
 	if (L->head == NULL) {
@@ -99,7 +99,7 @@ int removeFirst(LinkedListType* L) {//앞 제거 함수
 	return data;
 }
 
-int removeLast(LinkedListType* L) {//마지막 제거 함수
+int removeLast1(LinkedListType* L) {//마지막 제거 함수
 	ListNode* before = L->head;
 	ListNode* element;
 	int data;
@@ -130,13 +130,13 @@ int removeLast(LinkedListType* L) {//마지막 제거 함수
 	return data;
 }
 
-int remove(LinkedListType* L, int pos) {//특정 위치 제거 함수
+int remove1(LinkedListType* L, int pos) {//특정 위치 제거 함수
 	ListNode* before = L->head;
 	ListNode* element;
 	int data;
 
 	if (pos == 0) {//위치가 0이면 removeFirst 호출
-		return removeFirst(L);
+		return removeFirst1(L);
 	}
 
 	for (int i = 0; i < pos-1; i++) {
@@ -162,39 +162,6 @@ int remove(LinkedListType* L, int pos) {//특정 위치 제거 함수
 	return data;
 }
 
-void main() {
+void main1() {
 	LinkedListType list;
-	init(&list);
-
-	cout << "addFirst 실행" << endl;
-	addFirst(&list, 10); printList(&list);
-	addFirst(&list, 20); printList(&list);
-	addFirst(&list, 30); printList(&list);
-
-	cout << "add 실행" << endl;
-	add(&list, 0, 40); printList(&list);
-	add(&list, 1, 50); printList(&list);
-	add(&list, 3, 60); printList(&list);
-
-	cout << "addLast 실행" << endl;
-	addLast(&list, 70); printList(&list);
-	addLast(&list, 80); printList(&list);
-	addLast(&list, 90); printList(&list);
-
-	cout << "removeFirst 실행" << endl;
-	cout << removeFirst(&list) << " 제거" << endl; printList(&list);
-	cout << removeFirst(&list) << " 제거" << endl; printList(&list);
-
-	cout << "remove 실행" << endl;
-	cout << remove(&list,3) << " 제거" << endl; printList(&list);
-	cout << remove(&list,0) << " 제거" << endl; printList(&list);
-
-	cout << "removeLast 실행" << endl;
-	cout << removeLast(&list) << " 제거" << endl; printList(&list);
-	cout << removeLast(&list) << " 제거" << endl; printList(&list);
-
-	int pos;
-	cout << endl << "몇 번 노드의 값을 반환할까요?(인덱스x, 순서) ";
-	cin >> pos;
-	cout << pos << "번 노드의 값은 " << get(&list, pos) << endl;
 }

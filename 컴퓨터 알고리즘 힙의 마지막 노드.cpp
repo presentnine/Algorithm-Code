@@ -111,7 +111,7 @@ int findLastNode(HeapType& h, int n) {//마지막 노드 값 찾기
 	return h.heap[pos];
 }
 
-int main1() {
+int main6() {
 	int size;
 
 	srand(time(NULL));

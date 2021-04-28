@@ -36,7 +36,7 @@ vector<vector<int>> spiral(vector<vector<int>> A, int n, int m) {
 	return A;
 }
 
-int main() {
+int main5() {
 	int n, m;
 	vector<vector<int>> A;
 

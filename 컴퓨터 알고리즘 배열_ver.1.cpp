@@ -3,7 +3,7 @@
 
 using namespace std;
 
-vector<int> buildList(vector<int> A, int n) {//배열 초기화
+vector<int> buildList2(vector<int> A, int n) {//배열 초기화
 	for (int i = 0; i < n; i++)
 		A[i] = i + 1;
 
@@ -33,7 +33,7 @@ int runSimulationVer1(vector<int> A, int n, int k) {//케이크, 초의 개수, 건너뛸 
 	return A[r];
 }
 
-int main() {
+int main2() {
 	int n;//초의 총 개수
 	int k;//건너뛸 개수
 
@@ -45,7 +45,7 @@ int main() {
 
 	vector<int> cakeCandle(n);
 
-	cakeCandle = buildList(cakeCandle, n);
+	cakeCandle = buildList2(cakeCandle, n);
 
 	cout << runSimulationVer1(cakeCandle, n, k) <<"번 째 초입니다."<< endl;
 

@@ -3,14 +3,14 @@
 
 using namespace std;
 
-vector<int> buildList(vector<int> A, int n) {//배열 초기화 함수
+vector<int> buildList3(vector<int> A, int n) {//배열 초기화 함수
 	for (int i = 0; i < n; i++)
 		A[i] = i + 1;
 
 	return A;
 }
 
-vector<int> remove(vector<int> A, int n, int removePos) {//요소 제거 함수
+vector<int> remove3(vector<int> A, int n, int removePos) {//요소 제거 함수
 	if (removePos >= n) {
 		printf("잘못된 위치입니다.");
 		exit(1);
@@ -27,14 +27,14 @@ int runSimulationVer2(vector<int> A, int n, int k) {//케이크, 초의 개수, 건너뛸 
 
 	while (n > 1) {
 		r = (r + k) % n;
-		A = remove(A, n, r);
+		A = remove3(A, n, r);
 		n--;
 	}
 
 	return A[0];
 }
 
-int main() {
+int main3() {
 	int n;//초의 총 개수
 	int k;//건너뛸 개수
 
@@ -46,7 +46,7 @@ int main() {
 
 	vector<int> cakeCandle(n);
 
-	cakeCandle = buildList(cakeCandle, n);
+	cakeCandle = buildList3(cakeCandle, n);
 
 	cout << runSimulationVer2(cakeCandle, n, k) << "번 째 초입니다." << endl;
 
