@@ -19,7 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1238번 파티.cpp" />
+    <ClCompile Include="16236번 아기 상어.cpp" />
+    <ClCompile Include="1987번 알파벳.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

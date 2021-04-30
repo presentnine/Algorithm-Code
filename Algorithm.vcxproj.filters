@@ -21,7 +21,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1238번 파티.cpp">
+    <ClCompile Include="1987번 알파벳.cpp">
+      <Filter>소스 파일\백준</Filter>
+    </ClCompile>
+    <ClCompile Include="16236번 아기 상어.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
