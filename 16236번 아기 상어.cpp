@@ -78,7 +78,7 @@ bool simulation(int N, int& sharkR, int& sharkC, int& size, int& eatCount, int& 
 	return result;
 }
 
-int main() {
+int main2() {
 	int N;
 	int sharkR, sharkC;
 	int size = 2;
