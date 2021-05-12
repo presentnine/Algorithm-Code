@@ -6,7 +6,7 @@ using namespace std;
 
 int visited[1000][1000][2] = { 0, };
 
-struct infor {
+struct infor {//위치 정보 구조체
 	int r, c;
 	int cost;
 	int used;
@@ -54,7 +54,7 @@ int BFS(vector<vector<int>> &map, int N, int M) {
 	return -1;
 }
 
-int main2() {
+int main() {
 	int N, M;
 	int answer;
 	vector<vector<int>> map;
@@ -63,7 +63,6 @@ int main2() {
 	for (int i = 0; i < N; i++) {//초기화
 		vector<int> tmp(M, 0);
 		string s;
-
 		cin >> s;
 		
 		for (int j = 0; j < M; j++)

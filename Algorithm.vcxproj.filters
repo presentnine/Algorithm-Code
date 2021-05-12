@@ -21,10 +21,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2206번 벽 부수고 이동하기.cpp">
+    <ClCompile Include="2589번 보물섬.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="1707번 이분 그래프 3.cpp">
+    <ClCompile Include="2146번 다리 만들기.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
