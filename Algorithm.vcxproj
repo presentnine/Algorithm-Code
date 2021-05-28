@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2146번 다리 만들기.cpp" />
-    <ClCompile Include="2589번 보물섬.cpp" />
+    <ClCompile Include="1194번 달이 차오른다.cpp" />
+    <ClCompile Include="2250번 트리의 높이와 너비.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
