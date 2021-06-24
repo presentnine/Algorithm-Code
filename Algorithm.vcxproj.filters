@@ -21,10 +21,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2250번 트리의 높이와 너비.cpp">
+    <ClCompile Include="1967번 트리의 지름.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
-    <ClCompile Include="1194번 달이 차오른다.cpp">
+    <ClCompile Include="1600번 말이 되고픈 원숭이.cpp">
       <Filter>소스 파일\백준</Filter>
     </ClCompile>
   </ItemGroup>
