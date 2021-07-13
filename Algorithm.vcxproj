@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3584번 가장 가까운 공통 조상.cpp" />
-    <ClCompile Include="5052번 전화번호 목록.cpp" />
+    <ClCompile Include="18240번 이진 탐색 트리 복원하기2.cpp" />
+    <ClCompile Include="19535번 ㄷㄷㄷㅈ.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
